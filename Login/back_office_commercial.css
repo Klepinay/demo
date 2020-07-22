@@ -1,0 +1,107 @@
+body{
+	background: #E1E1E1;
+	margin: 0px;
+	padding: 0px;
+}
+
+header{
+    background: white;
+	margin: 0px;
+	padding: 0px;
+	border: 2px solid black;
+}
+
+nav ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	width:420px;
+	
+}
+
+nav li {
+	background-color: #67BE4B;
+	display:inline-block;
+	width:200px;
+	height:40px;
+	margin:0px;
+	padding:0px;
+	border:1px solid black;
+	text-align:center;
+	line-height:40px;
+	
+}
+nav li :hover{
+	background-color:#3388BB;
+}
+
+nav li a {
+	display:block;
+	text-decoration:none;
+	color: #FFFFFF;
+}
+
+#labelproduit {
+	display: block;
+	float: left;
+	width: 40%;
+}
+
+#labelquantite {
+	display: block;
+	float: left;
+	width: 10%;
+}
+
+#labelachat {
+	display: block;
+	float: left;
+	width: 10%;
+}
+
+#labelvente {
+	display: block;
+	float: left;
+	width: 10%;
+}
+
+#labelprix {
+	display: block;
+	float: left;
+	width: 10%;
+}
+
+#article {
+	display: block;
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+}
+
+#quantite {
+	display: block;
+	float: left;
+	width: 10%;
+	margin-left: 8.5%;
+}
+
+#achat {
+	display: block;
+	float: left;
+	width: 5%;	
+	margin-left: 6%;
+}
+
+#vente {
+	display: block;
+	float: left;
+	width: 5%;	
+	margin-left: 5%;
+}
+
+#prix {
+	display: block;
+	float: left;
+	width: 10%;
+	margin-left: 6%;
+}

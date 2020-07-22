@@ -1,0 +1,82 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+.nav {
+  width: 200px; /* Set a width if you like */
+  float: left;
+}
+
+.nav a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.nav a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.nav a.active {
+  background-color: #0083FF; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+.client {
+	float:right;
+	margin-right: 5px;	
+	padding: 7px;
+}
+
+#adresse {
+	width: 87.5%;
+}
+
+#postal {
+	width: 32%;
+}
+
+#ville {
+	width: 45.2%;
+}
+
+.info {
+	float: left;
+	width: 32%;
+	margin-left :5px;
+	padding: 6px;
+}
+
+h3 {
+	color: blue;
+	font-size: 16px;
+}
+
+label {
+	font-size: 14px; 
+}
+
+input {
+	border: 1px solid #E3E3E3;
+}
+select {
+	border: 1px solid #E3E3E3;
+}
+.detail {
+	float: right;
+	width: 85%;
+	margin-top: 25px;
+}
+.onglet
+{
+    display:inline-block;
+    margin-left:3px;
+    margin-right:3px;
+    padding:3px;
+    border:1px solid black;
+    cursor:pointer;
+}
+

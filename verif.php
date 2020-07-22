@@ -17,23 +17,23 @@ if(isset($_POST['username']) && isset($_POST['password']))
     
     if($username !== "" && $password !== "")
     {
-        $requete1 = "SELECT count(*) FROM t_user where user_identifiant = '".$username."' and user_password = '".$password."'";
-        $requete2 = "SELECT * FROM t_user WHERE user_identifiant='".$username."'";
+        $requete1 = "SELECT count(*) FROM t_user where identifiant = '".$username."' and password = '".$password."'";
+        $requete2 = "SELECT * FROM t_user WHERE identifiant='".$username."'";
         $exec_requete = mysqli_query($db,$requete1);
         $reponse      = mysqli_fetch_array($exec_requete);
         $count = $reponse['count(*)'];
         $exec_requete2 = mysqli_query($db,$requete2);
         $reponse2 = mysqli_fetch_array($exec_requete2);
-        $role = $reponse2['user_role'];
+        $role = $reponse2['role'];
 		if($count != 0 && $role == 'Admin')
         {
 			$_SESSION['username'] = $username;
-			header("Location: admin\Backoffice.php?username=".$username."&role=".$role);           
+			header("Location: admin\Backoffice.php?username=".$username);           
         }
         else if($count != 0 && $role ='Commercial')
         {
             $_SESSION['username'] = $username;
-            header('Location: shop\home.php');
+            header("Location: Commercial\BackOffice.php?username=".$username);
         }
         else
         {

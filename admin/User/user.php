@@ -23,7 +23,7 @@
                         <a class="nav-link" href="#">Catalogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="\Demo\admin\User\user.php?username=<?php echo $username ?>"">Utilisateurs</a>
+                        <a class="nav-link" href="\Demo\admin\User\user.php?username=<?php echo $username ?>">Utilisateurs</a>
                     </li>
                 </ul> 
                 <a href="\Demo\index.php?deconnection=true&username=<?php echo $username ?>" class="btn btn-danger"> Déconnection</a>  
@@ -46,7 +46,7 @@
             </div>
         </nav>
         <div class="container">
-            <a href="add.php?username=<?php echo $username ?>" class="btn btn-success" style="margin-top : 3%"> + Ajouter un client</a>
+            <a href="add.php?username=<?php echo $username ?>" class="btn btn-success" style="margin-top : 3%"> + Ajouter un Utilisateur</a>
         <table class="table table-info border="1" style="width: 100%; margin-top: 3%; ">
         <thead class="thead-dark">
             <th>
@@ -56,42 +56,48 @@
                 Prénom
             </th>
             <th>
-                Adresse
+                Entreprise
             </th>
             <th>
-                Email
+                Identifiant
             </th>
             <th>
-                Tel
-            </th>            
+                Mot de Passe
+            </th>
+            <th>
+                Role
+            </th>
             <th>
                 Edition
             </th>
         </thead>
             <?php 
 					$bdd = new PDO('mysql:host=localhost;dbname=demo;charset=utf8', 'root', '');
-					$customers = $bdd->query("SELECT * FROM `t_client` ORDER BY id");
-					foreach ($customers as $customer): 
+					$users = $bdd->query("SELECT * FROM `t_user` ORDER BY id");
+					foreach ($users as $user): 
 			?>
             <tr>
                 <td class="table-info">
-                    <?php echo $customer['name'] ?>
+                    <?php echo $user['name'] ?>
                 </td>
                 <td>
-                    <?php echo $customer['firstname'] ?>
+                    <?php echo $user['firstname'] ?>
                 </td>
                 <td>
-                    <?php echo $customer['adresse'] ?>
+                    <?php echo $user['societe'] ?>
                 </td>
                 <td>
-                    <?php echo $customer['mail'] ?>
+                    <?php echo $user['identifiant'] ?>
                 </td>
                 <td>
-                    <?php echo $customer['tel'] ?>
+                    <?php echo $user['password'] ?>
                 </td>
                 <td>
-                    <a class="btn btn-info" href="read.php?username=<?php echo $username ?>&id=<?php echo $customer['id'] ?>&update=0">Voir</a>
-                    <a class="btn btn-danger" href="delete.php?username=<?php echo $username ?>&id=<?php echo $customer['id'] ?>">Supprimer</a>
+                    <?php echo $user['role'] ?>
+                </td>
+                <td>
+                    <a class="btn btn-success" href="read.php?username=<?php echo $username ?>&id=<?php echo $user['id'] ?>&update=0">Modifier</a>
+                    <a class="btn btn-danger" href="delete.php?username=<?php echo $username ?>&id=<?php echo $user['id'] ?>">Supprimer</a>
                 </td>
             </tr>
             <?php endforeach ?>

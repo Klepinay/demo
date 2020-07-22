@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>Back - Office</title>
-        <link rel="stylesheet" href="\Demo\style.css" type="text/css">
+        <link rel="stylesheet" href="\Demo\admin\style.css" type="text/css">
         <link rel="stylesheet" href="\Demo\css\bootstrap.css" type="text/css">
     </head>
 
@@ -44,10 +44,38 @@
                 </div>                   
             </div>
         </nav>
-    <div class="container">
-        <div class="info">
+        <div class="container" style="height: 80%;background-color: #86cfda; margin-top: 3%; text-align:center">
 
-        </div>
+            <h2 style="text-align:center">Nouveau Utilisateur</h2>            
+            <form method="POST" action="addbdd.php?username=<?php echo $username ?>" style="text-align: center">
+                <label  class="control-label" for="name" >Nom</label><br />
+                <input type="text" name="name" id="name" placeholder="Ex: CLOUTIER"><br />
+
+                <label for="firstname">Prénom</label><br />
+                <input type="text" name="firstname" id="firestname" placeholder="Ex: Grégoire"><br />
+
+                <label for="societe">Entreprise</label><br />
+                <input type="text" name="societe" id="societe" placeholder="Ex: Societe 1"></textarea> <br />
+
+                <label for="identifiant">Identifiant</label><br />
+                <input type="text" name="identifiant" id="identifiant" placeholder="Ex: G.Cloutier"><br />
+
+                <label for="password">Mot de Passe</label><br />
+                <input type="password" name="password" id="password" placeholder="Ex: G.Clour@974!"><br />
+
+                <label for="role">Role</label><br />
+                <select name="role" id="role" style="width: 25%">
+                    <option value="">--Choisissez un role--</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Assistant">Assistant</option>
+                    <option value="Magasin">Magasin</option>
+                    <option value="Admin">Admin</option>
+                </select><br /><br />
+                
+                <input type="submit" value="Ajouter" >
+            </form>
+           
     </div>
+
     </body>
 </html>

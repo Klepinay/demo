@@ -13,9 +13,9 @@
         $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		$del = $dbco->prepare("
-			DELETE FROM t_client WHERE id=".$id);
+			DELETE FROM t_user WHERE id=".$id);
 		$del->execute();
-        header("Location: client.php?username=".$username);
+        header("Location: user.php?username=".$username);
         exit;
 	}
 	catch(PDOException $e) {

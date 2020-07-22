@@ -93,5 +93,8 @@ input,
     width: 25%;
 }
 textarea {
-    width: 25%
+    width: 25%;
+}
+select {
+    width: 25%;
 }

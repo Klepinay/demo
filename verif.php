@@ -33,7 +33,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
         else if($count != 0 && $role ='Commercial')
         {
             $_SESSION['username'] = $username;
-            header('Location: magasin\Accueil.php');
+            header('Location: shop\home.php');
         }
         else
         {

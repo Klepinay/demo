@@ -24,6 +24,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="\Demo\admin\User\user.php?username=<?php echo $username ?>"">Utilisateurs</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Commande</a>
+                    </li>
                 </ul> 
                 <a href="\Demo\index.php?deconnection=true&username=<?php echo $username ?>" class="btn btn-danger"> Déconnection</a>  
                 <div id="content">
@@ -44,8 +50,9 @@
                 </div>                   
             </div>
         </nav>
-        <div class="container" style="height: 80%;background-color: #86cfda; margin-top: 3%; text-align:center">
-
+        <div class="container" style="height: 80%;background-color: #86cfda; margin-top: 3%; text-align:center; padding-top: 2%">
+        <a class="btn btn-info" style="float:left" href="\Demo\admin\User\user.php?username=<?php echo $username ?>"><- Retour</a>
+                      
             <h2 style="text-align:center">Nouveau Client</h2>            
             <form method="POST" action="addbdd.php?username=<?php echo $username ?>" style="text-align: center">
                 <label  class="control-label" for="name" >Nom</label><br />
@@ -63,7 +70,7 @@
                 <label for="tel">Téléphone</label><br />
                 <input type="tel" name="tel" id="tel" placeholder="Ex: 0603 125436"><br /> <br /> 
                 
-                <input type="submit" value="Ajouter" >
+                <input class="btn btn-success" type="submit" value="Ajouter" >
             </form>
            
     </div>

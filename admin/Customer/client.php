@@ -25,6 +25,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="\Demo\admin\User\user.php?username=<?php echo $username ?>"">Utilisateurs</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Devis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Commande</a>
+                    </li>
                 </ul> 
                 <a href="\Demo\index.php?deconnection=true&username=<?php echo $username ?>" class="btn btn-danger"> Déconnection</a>  
                 <div id="content">

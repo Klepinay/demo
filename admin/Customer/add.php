@@ -51,7 +51,7 @@
             </div>
         </nav>
         <div class="container" style="height: 80%;background-color: #86cfda; margin-top: 3%; text-align:center; padding-top: 2%">
-        <a class="btn btn-info" style="float:left" href="\Demo\admin\User\user.php?username=<?php echo $username ?>"><- Retour</a>
+        <a class="btn btn-info" style="float:left" href="\Demo\admin\Customer\client.php?username=<?php echo $username ?>"><- Retour</a>
                       
             <h2 style="text-align:center">Nouveau Client</h2>            
             <form method="POST" action="addbdd.php?username=<?php echo $username ?>" style="text-align: center">

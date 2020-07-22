@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>Liste des Clients</title>
-        <link rel="stylesheet" href="\Demo\style.css" type="text/css">
+        <link rel="stylesheet" href="\Demo\Commercial\style.css" type="text/css">
         <link rel="stylesheet" href="\Demo\css\bootstrap.css" type="text/css">
     </head>
     <body>
@@ -14,16 +14,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">            
                 <ul  class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="\Demo\Admin\backOffice.php?username=<?php echo $username ?>">Tableau de Bord</a>
+                        <a class="nav-link" href="\Demo\Commercial\backOffice.php?username=<?php echo $username ?>">Tableau de Bord</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="\Demo\admin\Customer\client.php?username=<?php echo $username ?>">Clients</a>
+                        <a class="nav-link" href="\Demo\Commercial\Customer\client.php?username=<?php echo $username ?>">Clients</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Catalogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Devis</a>
+                        <a class="nav-link" href="\Demo\Commercial\Devis\Devis.php">Devis</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Commande</a>

@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>Back - Office</title>
-        <link rel="stylesheet" href="\Demo\style.css" type="text/css">
+        <link rel="stylesheet" href="\Demo\Commercial\style.css" type="text/css">
         <link rel="stylesheet" href="\Demo\css\bootstrap.css" type="text/css">
     </head>
 
@@ -22,7 +22,7 @@
                         <a class="nav-link" href="#">Catalogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Devis</a>
+                        <a class="nav-link" href="Devis\Devis.php">Devis</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Commande</a>

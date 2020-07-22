@@ -7,7 +7,7 @@
 <html>
     <head>
         <title>Back - Office</title>
-        <link rel="stylesheet" href="\Demo\admin\style.css" type="text/css">
+        <link rel="stylesheet" href="\Demo\Commercial\style.css" type="text/css">
         <link rel="stylesheet" href="\Demo\css\bootstrap.css" type="text/css">
     </head>
     <body>
@@ -16,16 +16,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">            
                 <ul  class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="\Demo\Admin\backOffice.php?username=<?php echo $username ?>">Tableau de Bord</a>
+                        <a class="nav-link" href="\Demo\Commercial\backOffice.php?username=<?php echo $username ?>">Tableau de Bord</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="\Demo\admin\Customer\client.php?username=<?php echo $username ?>">Clients</a>
+                        <a class="nav-link" href="\Demo\Commercial\Customer\client.php?username=<?php echo $username ?>">Clients</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Catalogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Devis</a>
+                        <a class="nav-link" href="\Demo\Commercial\Devis\Devis.php">Devis</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Commande</a>
@@ -48,7 +48,7 @@
 					$customers = $bdd->query("SELECT * FROM `t_client` WHERE id=$id");
 					foreach ($customers as $customer): 
             ?>
-            <a class="btn btn-info" style="float:left" href="\Demo\admin\Customer\client.php?username=<?php echo $username ?>"><- Retour</a>
+            <a class="btn btn-info" style="float:left" href="\Demo\Commercial\Customer\client.php?username=<?php echo $username ?>"><- Retour</a>
             <h2 style="text-align:center">Client <?php echo $customer['name'] ?>&nbsp;<?php echo $customer['firstname'] ?></h2>            
             <form method="POST" action="update.php?username=<?php echo $username ?>&id=<?php echo $id ?>" style="text-align: center">
                 <label  class="control-label" for="name">Nom</label><br />

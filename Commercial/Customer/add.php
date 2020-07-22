@@ -5,7 +5,7 @@
 <html>
     <head>
         <title>Back - Office</title>
-        <link rel="stylesheet" href="\Demo\admin\style.css" type="text/css">
+        <link rel="stylesheet" href="\Demo\Commercial\style.css" type="text/css">
         <link rel="stylesheet" href="\Demo\css\bootstrap.css" type="text/css">
     </head>
 
@@ -13,16 +13,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">            
                 <ul  class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="\Demo\Admin\backOffice.php?username=<?php echo $username ?>">Tableau de Bord</a>
+                        <a class="nav-link" href="\Demo\Commercial\backOffice.php?username=<?php echo $username ?>">Tableau de Bord</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Customer\client.php?username=<?php echo $username ?>">Clients</a>
+                        <a class="nav-link" href="\Demo\Commercial\Customer\client.php?username=<?php echo $username ?>">Clients</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Catalogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Devis</a>
+                        <a class="nav-link" href="\Demo\Commercial\Devis\Devis.php">Devis</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Commande</a>
@@ -48,7 +48,7 @@
             </div>
         </nav>
         <div class="container" style="height: 80%;background-color: #86cfda; margin-top: 3%; text-align:center; padding-top: 2%">
-        <a class="btn btn-info" style="float:left" href="\Demo\admin\User\user.php?username=<?php echo $username ?>"><- Retour</a>
+        <a class="btn btn-info" style="float:left" href="\Demo\Commercial\Customer\client.php?username=<?php echo $username ?>"><- Retour</a>
                       
             <h2 style="text-align:center">Nouveau Client</h2>            
             <form method="POST" action="addbdd.php?username=<?php echo $username ?>" style="text-align: center">
